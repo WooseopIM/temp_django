@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>edit</h1>
+    <form action="{% url 'edit' student.pk %}" method="POST">
+      {% csrf_token %}
+      <input value="{{ student.name }}" placeholder="이름을 입력해주세요" name="name" />
+      <br />
+      <br />
+      <input
+        value="{{ student.phone_num }}"
+        placeholder="전화번호를 입력해주세요"
+        name="phone_num"
+      />
+      <br />
+      <br />
+      <button type="submit">수정하기 ></button>
+    </form>
+  </body>
+</html>

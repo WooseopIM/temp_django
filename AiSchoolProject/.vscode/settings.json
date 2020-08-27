@@ -1,0 +1,5 @@
+{
+    "python.formatting.provider": "autopep8",
+    "python.pythonPath": "C:\\Users\\LikeLion\\.virtualenvs\\5_ai-C-HZJuKL\\Scripts\\python.exe",
+    "python.linting.enabled": false
+}

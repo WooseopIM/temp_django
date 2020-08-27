@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>detail</h1>
+    {% for student in class_obj.student.all %}
+    <ul>
+      <li><a href="{% url 'student' student.pk %}">{{ student.name }}</a></li>
+      <li>{{ student.phone_num }}</li>
+      <li>{{ student.intro }}</li>
+
+      <hr />
+    </ul>
+    {% endfor %}
+  </body>
+</html>
